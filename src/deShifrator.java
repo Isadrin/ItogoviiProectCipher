@@ -11,10 +11,10 @@ public class deShifrator {
             String line;
             while ((line = reader.readLine()) != null) {
                 StringBuilder stringBuilder = new StringBuilder();
-                char[] ciperNext = line.toCharArray();
-                for (int i = 0; ciperNext.length > i; i++) {
-                    ciperNext[i] = (char) (ciperNext[i] - cipher.keyDechiphr);
-                    stringBuilder.append(ciperNext[i]);
+                char[] cipherNext = line.toCharArray();
+                for (int i = 0; cipherNext.length > i; i++) {
+                    cipherNext[i] = (char) (cipherNext[i] - cipher.keyDechiphr);
+                    stringBuilder.append(cipherNext[i]);
                 }
                 System.out.println("Ваше расшифрованное послание: " + stringBuilder);
             }

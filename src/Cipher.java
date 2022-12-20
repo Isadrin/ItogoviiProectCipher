@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Cipher {
     Integer key;
    static Integer keyDechiphr;
-
     public static Integer getShifr() {
 
         try (BufferedReader reader = new BufferedReader(new FileReader("text.txt"))) {
