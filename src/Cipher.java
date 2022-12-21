@@ -1,9 +1,8 @@
 import java.io.*;
 import java.util.Scanner;
-
 public class Cipher {
     Integer key;
-   static Integer keyDechiphr;
+    static Integer keyDechiphr;
     public static Integer getShifr() {
 
         try (BufferedReader reader = new BufferedReader(new FileReader("text.txt"))) {
@@ -11,7 +10,6 @@ public class Cipher {
             Cipher cipher = new Cipher();
             Scanner scanner = new Scanner(System.in);
             cipher.key = scanner.nextInt();
-
             while ((line = reader.readLine()) != null) {
                 char[] cipherNext = line.toCharArray();
                 StringBuilder stringBuilder = new StringBuilder();

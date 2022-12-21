@@ -1,11 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
 public class deShifrator {
-
     static void getDeshifr() {
-
         try (BufferedReader reader = new BufferedReader(new FileReader("cipher.txt"))) {
             Cipher cipher = new Cipher();
             String line;
